@@ -529,7 +529,7 @@ h5 {
   -webkit-box-align: center;
   align-items: center;
   margin: 50px auto 100px 50px;
-  color: #525461;
+  color: #4d1919;
   color: var(--default);
   justify-content: center
 }
@@ -578,7 +578,7 @@ h5 {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #525461;
+  color: #4d1919;
   color: var(--default);
   font-size: 1.5rem;
   position: absolute;
@@ -607,7 +607,7 @@ h5 {
   margin: .825rem 0;
   box-sizing: border-box;
   transition: all .3s cubic-bezier(.68, -0.55, .265, 1.55);
-  color: #525461;
+  color: #4d1919;
   color: var(--default);
   border: 0;
   border-radius: 0;
@@ -676,7 +676,7 @@ h5 {
   margin-top: auto;
   padding: 0px 0px 30px;
   z-index: 10;
-  color: #525461;
+  color: #4d1919;
   color: var(--default);
   position: absolute;
   white-space: normal;
@@ -3524,8 +3524,8 @@ span[data-tooltip] .label {
   text-decoration: none;
   text-transform: uppercase;
   color: #fff !important;
-  border-radius: 3px;
-  background-color: #bfbfbf;
+  border-radius: 6px;
+  background-color: var(--primary) !important;
   text-shadow: none;
 }
 
@@ -4186,6 +4186,163 @@ pre.command-output {
   width: auto
 }
 
+[data-page^="admin-services-openclash"] .oc[data-darkmode="true"] {
+  --bg-white: #000000;
+  --bg-light: #242424;
+  --hover-bg: #242424;
+}
+
+[data-page^="admin-services-openclash"] .oc[data-darkmode="true"] .developer-container {
+  background: var(--bg-light);
+}
+
+[data-page^="admin-services-openclash"] .cm-s-material-log.CodeMirror {
+  background-color: #000000;
+  color: #EEFFFF;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] #tab-header ul.cbi-tabmenu li.cbi-tab-disabled,
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] [id^="tab-header-openclash-"] ul li.cbi-tab-disabled {
+    color: #1f2937 !important;
+    background: #000000 !important;
+    opacity: 0.7 !important;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] #tab-header {
+    background: #242424;
+    border-bottom: 1px solid #242424;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] #tab-header ul.cbi-tabmenu {
+  background: #242424;
+}
+
+[data-page^="admin-services-openclash"] element.style {
+  width: 0px;
+}
+
+[data-page^="admin-services-openclash"] .cm-s-material .CodeMirror-gutters {
+  background: #263238;
+  color: rgba(156, 163, 175, 0.7);
+  border: none;
+}
+
+[data-page^="admin-services-openclash"] .cm-s-material .CodeMirror-guttermarker,
+[data-page^="admin-services-openclash"] .cm-s-material .CodeMirror-guttermarker-subtle,
+[data-page^="admin-services-openclash"] .cm-s-material .CodeMirror-linenumber,
+[data-page^="admin-services-openclash"] .cm-s-material-log .CodeMirror-guttermarker,
+[data-page^="admin-services-openclash"] .cm-s-material-log .CodeMirror-guttermarker-subtle,
+[data-page^="admin-services-openclash"] .cm-s-material-log .CodeMirror-linenumber {
+  color: rgba(156, 163, 175, 0.7);
+}
+
+[data-page^="admin-services-openclash"] .cm-s-material-log .CodeMirror-gutters {
+  background: #263238;
+  color: rgba(156, 163, 175, 0.7);
+  border: none;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] .diag-style {
+    background-color: #242424;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] #diag-rc-output > pre,
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] #dns-rc-output > pre {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+[data-page^="admin-services-openclash"] .cm-s-material.CodeMirror {
+  background-color: #000000;
+  color: #EEFFFF;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] .radio-button {
+    background: #242424;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.15);
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] .radio-button label {
+    background: #000000;
+    box-shadow: 0 0px 0px 0 rgba(0,0,0,0.15);
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] #tab-header ul.cbi-tabmenu,
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] [id*="tab-header-openclash"] {
+    font-family: 'Google Sans' !important;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] :is([id^="tab-header-openclash-"], [id^="tab-header-openclash-"] ul) {
+    background: #242424 !important;
+}
+
+:root[data-darkmode="true"] [data-page^="admin-services-openclash"] [id^="tab-header-openclash-"] {
+    border-bottom: 1px solid #242424 !important;
+}
+
+[data-page^="admin-services-openclash"] .cbi-value-description,
+[data-page^="admin-services-openclash"] .cbi-map-descr,
+[data-page^="admin-services-openclash"] .oc,
+[data-page^="admin-services-openclash"] .cbi-section p,
+[data-page^="admin-services-openclash"] .tool_label_span,
+[data-page^="admin-services-openclash"] b, strong,
+[data-page^="admin-services-openclash"] .form-group label, .status-item .label,
+[data-page^="admin-services-openclash"] [class^="info-cell"],
+[data-page^="admin-services-openclash"] [class^="info-cell"] *,
+[data-page^="admin-services-openclash"] .settings-cell,
+[data-page^="admin-services-openclash"] .settings-cell *
+[data-page^="admin-services-openclash"] .sub_div {
+  font-family: 'Google Sans' !important;
+}
+
+[data-page^="admin-services-openclash"] .btn-group {
+    display: flex;
+    width: 100%;
+    margin: 0px auto;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media (prefers-color-scheme: dark) {
+  [data-page^="admin-services-openclash"] {
+      font-family: 'Google Sans' !important;
+  }
+
+  [data-page^="admin-services-openclash"] .cbi-input-textarea,
+  [data-page^="admin-services-openclash"] .btn, button, select, input, .cbi-dropdown {
+      font-family: 'Google Sans' !important;
+      font-size: 14px !important;
+  }
+
+  [data-page^="admin-services-openclash"] .cbi-section-descr {
+      font-family: 'Google Sans' !important;
+  }
+}
+
+[data-page^="admin-services-openclash"] .cbi-input-textarea {
+    font-size: 14px !important;
+    font-family: 'Google Sans' !important;
+}
+
+[data-page^="admin-services-openclash"] .oc .version-display .version-text {
+    font-weight: 700;
+}
+
+[data-page^="admin-services-openclash"] .oc .dashboard-btn {
+    font-size: 11px !important;
+    font-weight: 600 !important;
+}
+
+[data-page^="admin-services-openclash"] .oc .subscription-info-text {
+    white-space: normal;
+}
+
+[data-page^="admin-services-openclash"] .status-item .value b {
+    font-family: 'Google Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !important;
+    font-weight: 700;
+}
+
 /* IE hacks */
 @media all and (-ms-high-contrast: none) {
   .main>.main-left>.nav>.slide>.menu::before {
@@ -4272,7 +4429,7 @@ pre.command-output {
 
   .tabs>li>a,
   .cbi-tabmenu>li>a {
-    padding: 0.2rem 0.8rem;
+    /* padding: 0.2rem 0.8rem; */
   }
 
   .panel-title {
@@ -4836,11 +4993,11 @@ pre.command-output {
   }
 
   .login-page .login-container .login-form .form-login .input-group::before {
-    color: #525461;
+    color: #4d1919;
   }
 
   .login-page .login-container .login-form .form-login .input-group input {
-    color: #525461;
+    color: #4d1919;
     border-bottom: white 1px solid;
     border-bottom: var(--white) 1px solid;
     border-radius: 0;
@@ -5174,9 +5331,9 @@ div#add_link_div {
   position: relative;
   background: #fff;
   border: 0;
-  border-radius: 6px;
-  padding: 16px;
-  padding-top: 56px;
+  border-radius: 10px;
+  padding: 0px;
+  padding-top: 0px;
   box-sizing: border-box;
 }
 
