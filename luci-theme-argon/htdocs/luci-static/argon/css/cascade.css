@@ -90,6 +90,7 @@ body {
   font-family: var(--font-family-sans-serif);
   scrollbar-width: none;
   background-color: var(--background-color);
+  overscroll-behavior: none;
 }
 
 html {
@@ -726,7 +727,8 @@ small {
   overflow-y: auto;
   height: 100%;
   display: flex;
-  flex-direction: row
+  flex-direction: row;
+  overscroll-behavior: none
 }
 
 .main-left {
@@ -736,7 +738,8 @@ small {
   background-color: var(--menu-bg-color);
   box-shadow: rgba(0, 0, 0, 0.75) 0 0 15px -5px;
   overflow-x: auto;
-  z-index: 100
+  z-index: 100;
+  overscroll-behavior: none
 }
 
 .main-left .sidenav-header {
@@ -782,7 +785,8 @@ small {
   overflow-x: hidden;
   overflow-y: auto;
   display: flex;
-  flex-direction: column
+  flex-direction: column;
+  overscroll-behavior: none
 }
 
 .main-right>#maincontent {
