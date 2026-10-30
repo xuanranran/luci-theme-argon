@@ -6351,6 +6351,109 @@ input.argon-color-swatch[type="color"] {
   text-align: start;
 }
 
+@media screen and (max-width: 600px) {
+  /* Realtime summaries alternate label/value cells; keep each pair in one column. */
+  :is([data-page="admin-status-realtime-load"],
+      [data-page="admin-status-realtime-bandwidth"],
+      [data-page="admin-status-realtime-connections"]) #map .cbi-section {
+    padding: .75rem;
+  }
+
+  :is([data-page="admin-status-realtime-load"],
+      [data-page="admin-status-realtime-bandwidth"],
+      [data-page="admin-status-realtime-connections"]) #map .cbi-section > table.table > tbody,
+  [data-page="admin-status-realtime-connections"] #connections > tbody {
+    display: block;
+    width: 100%;
+  }
+
+  :is([data-page="admin-status-realtime-load"],
+      [data-page="admin-status-realtime-bandwidth"],
+      [data-page="admin-status-realtime-connections"]) #map .cbi-section > table.table .tr {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: .375rem .5rem;
+    padding: .5rem 0;
+  }
+
+  :is([data-page="admin-status-realtime-load"],
+      [data-page="admin-status-realtime-bandwidth"],
+      [data-page="admin-status-realtime-connections"]) #map .cbi-section > table.table .td {
+    display: block;
+    min-width: 0;
+    width: auto;
+    padding: .125rem;
+    border-top: 0;
+    /* Native labels use .right !important; values must share their alignment. */
+    text-align: center !important;
+    font-size: .8125rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+    font-variant-numeric: tabular-nums;
+  }
+
+  :is([data-page="admin-status-realtime-load"],
+      [data-page="admin-status-realtime-bandwidth"],
+      [data-page="admin-status-realtime-connections"]) #map .cbi-section > table.table .tr + .tr {
+    border-top: 1px solid rgba(128, 128, 128, .2);
+  }
+
+  :is([data-page="admin-status-realtime-load"],
+      [data-page="admin-status-realtime-bandwidth"],
+      [data-page="admin-status-realtime-connections"]) #map .cbi-section > table.table .td:nth-child(odd) {
+    grid-row: 1;
+    white-space: nowrap;
+  }
+
+  :is([data-page="admin-status-realtime-load"],
+      [data-page="admin-status-realtime-bandwidth"],
+      [data-page="admin-status-realtime-connections"]) #map .cbi-section > table.table .td:nth-child(even) {
+    grid-row: 2;
+  }
+
+  [data-page="admin-status-realtime-connections"] #settings-row {
+    flex-wrap: wrap;
+    gap: .75rem;
+  }
+
+  [data-page="admin-status-realtime-connections"] #settings-row > span {
+    flex: 1 1 100% !important;
+    min-width: 0;
+  }
+
+  [data-page="admin-status-realtime-connections"] #settings-row .toggle-lookups {
+    width: 100% !important;
+    margin: 0;
+    white-space: normal;
+  }
+
+  [data-page="admin-status-realtime-connections"] #connections .tr:not(.table-titles):not(.placeholder) {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: .375rem .75rem;
+    padding: .75rem 0;
+  }
+
+  [data-page="admin-status-realtime-connections"] #connections .td {
+    min-width: 0;
+    width: auto;
+    padding: .25rem;
+    border-top: 0;
+    text-align: left;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+  }
+
+  [data-page="admin-status-realtime-connections"] #connections .td:nth-child(n+3) {
+    grid-column: 1 / -1;
+  }
+
+  [data-page="admin-status-realtime-connections"] #connections .td:nth-child(n+3)[data-title]::before {
+    display: block;
+    padding: 0;
+  }
+}
+
 [data-page="admin-network-network"] #cbi-network-interface .td {
   min-width: 0;
   overflow-wrap: anywhere;
