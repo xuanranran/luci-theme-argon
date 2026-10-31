@@ -3946,8 +3946,88 @@ div[style*="display:grid;grid-template-columns:repeat"] .ifacebox .ifacebox-body
   box-shadow: 0 -1px 0 0 #ddd;
 }
 
-#wifi_assoclist_table>.tr>.td[data-title="RX Rate / TX Rate"] {
-  width: 23rem;
+.ifacebadge[data-signal] {
+  min-width: min-content;
+  padding-inline: .5rem;
+  white-space: nowrap;
+}
+
+.ifacebadge[data-signal] > img {
+  flex: none;
+  margin: 0;
+}
+
+.ifacebadge[data-signal] > span {
+  flex-shrink: 0;
+  max-width: none;
+  direction: ltr;
+  unicode-bidi: isolate;
+  white-space: nowrap;
+  overflow-wrap: normal;
+}
+
+#wifi_assoclist_table .ifacebadge[data-ssid] {
+  display: flex;
+  width: 100%;
+  gap: .5rem;
+  padding: .5rem;
+}
+
+#wifi_assoclist_table .ifacebadge[data-ssid] > img {
+  flex: none;
+  margin: 0;
+}
+
+#wifi_assoclist_table .ifacebadge[data-ssid] > span {
+  flex: 1 1 0;
+  min-width: 0;
+  text-align: start;
+}
+
+#wifi_assoclist_table .ifacebadge[data-ssid] small {
+  display: block;
+  direction: ltr;
+  unicode-bidi: isolate;
+}
+
+#wifi_assoclist_table > .tr > .td > span.hide-xs {
+  display: block;
+}
+
+@media screen and (min-width: 1281px) {
+  #wifi_assoclist_table .td > .cbi-dropdown:is(.btn, .cbi-button):not([multiple]) {
+    min-width: max-content;
+  }
+
+  #wifi_assoclist_table .td > .cbi-dropdown:is(.btn, .cbi-button):not([multiple]) > ul:not(.dropdown) > li {
+    white-space: nowrap;
+    overflow-wrap: normal;
+  }
+
+  #wifi_assoclist_table > .tr > :is(.th, .td) {
+    padding-inline: .5rem;
+    overflow-wrap: break-word;
+  }
+
+  #wifi_assoclist_table > .tr > :is(.th, .td):first-child {
+    width: 22%;
+    min-width: 10rem;
+  }
+}
+
+@media screen and (max-width: 1280px) {
+  .table .td:has(.ifacebadge[data-signal]),
+  #cbi-wireless .td:has(.ifacebadge[data-signal]) {
+    min-width: min-content;
+    padding-inline: .5rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #wifi_assoclist_table .td:has(> .ifacebadge[data-ssid]) {
+    flex-basis: 100%;
+    padding-inline: .5rem;
+  }
 }
 
 [data-page="admin-network-dhcp"] .cbi-value {
