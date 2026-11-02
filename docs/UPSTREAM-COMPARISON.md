@@ -3,7 +3,7 @@
 ## Integration Scope
 
 This fork remains based on the customized 2.4.2 codebase. Its local version
-label is updated from `2.5.0` to `3.1.0` at the maintainer's request. Selected
+label is updated from `2.5.0` to `3.1.1` at the maintainer's request. Selected
 changes through jerrykuku's `v3.1.0` are backported; the version label does not
 mean a full upstream replacement or a rewrite of the fork's visual design.
 The independent `luci-app-argon-config` package is versioned `3.0.0`.
