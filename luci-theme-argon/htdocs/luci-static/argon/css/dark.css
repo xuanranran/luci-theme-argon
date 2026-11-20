@@ -33,6 +33,23 @@ body {
   color: #cccccc;
 }
 
+.skip-link,
+.login-page .background-controls > button {
+  color: #ccc;
+  background: rgba(36, 36, 36, .9);
+  border-color: #444;
+}
+
+.skip-link:focus,
+.login-page .background-controls > button:focus-visible,
+#view > .Dashboard .dashboard-widget-settings > summary:focus-visible {
+  outline-color: var(--dark-primary);
+}
+
+#view > .Dashboard .dashboard-widget-settings {
+  border-color: var(--dashboard-border, #444);
+}
+
 .spinning::before {
   position: absolute;
   top: 0;
