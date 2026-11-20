@@ -33,6 +33,19 @@ body {
   color: #cccccc;
 }
 
+[data-page="admin-system-admin-sshkeys"] #view .cbi-dynlist {
+  --argon-ssh-panel: #242424;
+  --argon-ssh-text: #ccc;
+  --argon-ssh-muted: #adb5bd;
+  --argon-ssh-accent: var(--dark-primary);
+}
+
+@container argon-network-list (max-width: 62rem) {
+  #cbi-network :is(#cbi-network-interface, #cbi-network-device) .cbi-section-table-row > .td {
+    border-block-end-color: transparent;
+  }
+}
+
 .skip-link,
 .login-page .background-controls > button {
   color: #ccc;
